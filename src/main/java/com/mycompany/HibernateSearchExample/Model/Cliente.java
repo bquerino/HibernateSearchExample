@@ -23,6 +23,7 @@ public class Cliente {
 	@Field
     private int numero;
 	
+	
 	public Cliente(int id, String nomeCliente, String endereco, int numero) {
         this.id = id;
         this.nomeCliente = nomeCliente;

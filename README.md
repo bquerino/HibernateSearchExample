@@ -5,10 +5,12 @@ O Hibernate search integra com o **Apache Lucene** um software/lib de busca e um
 
 Para mais informações sobre visite o [site da engine](https://lucene.apache.org/).
 
+O projeto possui diversas referências da documentação original do [Hibernate Search](https://hibernate.org/search/documentation/getting-started/), verifique para maiores informações.
+
 ---
 
 ## Features
-TBD.
+* Rest controller com busca por palavra-chave.
 
 ## Testes implementados
 

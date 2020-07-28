@@ -1,6 +1,5 @@
 package com.mycompany.HibernateSearchExample;
 
-import static org.hamcrest.collection.IsIterableContainingInOrder.contains;
 import static org.junit.Assert.*;
 
 import org.hibernate.search.jpa.FullTextEntityManager;
@@ -24,7 +23,6 @@ import com.mycompany.HibernateSearchExample.Model.Cliente;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import java.util.Arrays;
-import java.util.LinkedList;
 import java.util.List;
 
 import static org.hamcrest.collection.IsIterableContainingInAnyOrder.containsInAnyOrder;
@@ -107,7 +105,7 @@ public class HibernateSearchTest {
     @Test
     public void test6_whenFuzzySearch_thenCorrectMatches() {
         List<Cliente> expected = Arrays.asList(clientes.get(0), clientes.get(1), clientes.get(2), clientes.get(4));
-        List<Cliente> results = dao.buscaPorAproximacao("teste");
+        List<Cliente> results = dao.buscaPorAproximacao("tesJote");
 
         assertThat(results, containsInAnyOrder(expected.toArray()));
     }
